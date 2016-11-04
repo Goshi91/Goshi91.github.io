@@ -13,6 +13,7 @@
   <link rel="canonical" href="http://localhost:4000/">
   <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="/feed.xml">
   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -47,8 +48,8 @@
     <div class="pure-u-3-5">
       <div>
         {% for post in site.posts limit 4 %}
-          <div class="border-top">
-            <img width="1200" height="400" src="{{ BASE_PATH }}{{ post.featured_image }}">
+          <div class="border-top padding-3">
+            <img width="1200" height="400" src="{{ BASE_PATH }}{{ post.external_image ? post.external_image : post.featured_image }}">
             <div class="post-content">
               <h3 class="content-subhead">
                 <a href="{{ BASE_PATH }}{{ post.url }}"> {{ post.title }} </a>
@@ -58,6 +59,10 @@
               </p>
               <div class="mid-size">
                 <a> {{ post.date | date_to_string }} </a>
+              </div>
+              <div>
+                <a> <i class="fa fa-facebook-official" aria-hidden="true"></i> </a>
+                <a> <i class="fa fa-twitter" aria-hidden="true"></i> </a>
               </div>
               <!-- <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></div>
               {{ post.content | strip_html | truncatewords:75}}<br>
@@ -70,10 +75,18 @@
 
     <!-- END OF POST PREVIEW -->
     <div class="pure-u-2-5">
-      <h2 class="padding-3"> Autora </h2>
-      <div class="pure-g padding-3">
+      <!-- <h2 class="padding-3"> Autora </h2>
+      <div class="about">
+        <a href="#">
+          <h5>
+            <img class="avatar" height="120" width="120" src="{{ BASE_PATH }}/assets/goshi.jpg">
+            Goshi
+          </h5>
+        </a>
+      </div>
+       <div class="pure-g padding-3">
         <div class="pure-u">
-          <img class="avatar" height="64" width="64" src="{{ BASE_PATH }}/assets/goshi.jpg">
+
         </div>
         <div class="pure-u-3-4 padding-3">
           <h3> Goshi </h3>
@@ -81,8 +94,8 @@
             Estudiante de RRPP en UADE, amante de la música y extremadamente friki.
           </p>
        </div>
-      </div>
-    </div>
+     </div>x
+   </div> -->
   </div>
 </body>
 </html>

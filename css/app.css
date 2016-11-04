@@ -6,6 +6,10 @@ a {
   color: #9ba1a7;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 .mid-size {
   font-size: 0.9rem;
 }
