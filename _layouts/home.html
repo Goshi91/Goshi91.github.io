@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Frikon</title>
+  <meta name="description" content="Un Blog sobre cosas frikis: Comics, Peliculas, Series you name it">
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="/css/pure.css">
+  <link rel="stylesheet" href="/css/app.css">
+  <link rel="canonical" href="http://localhost:4000/">
+  <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="/feed.xml">
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header no-padding no-margin">
+    <div class="home-menu pure-menu pure-menu-horizontal">
+      <img class="no-padding no-margin header-logo" src="{{ BASE_PATH }}/assets/logofinal.png">
+      <img class="no-padding no-margin header-logo" src="{{ BASE_PATH }}/assets/logofinal2.png">
+    </div>
+  </div>
+  <!-- END OF HEADER -->
+
+  <!-- NAV BAR -->
+  <div class="pure-menu-horizontal">
+    <ul class="pure-menu-list">
+      <li class="pure-menu-item"><a href="#" class="pure-menu-link">Peliculas</a></li>
+      <li class="pure-menu-item"><a href="#" class="pure-menu-link">Series</a></li>
+      <li class="pure-menu-item"><a href="#" class="pure-menu-link">Comics</a></li>
+      <li class="pure-menu-item"><a href="#" class="pure-menu-link">Literatura</a></li>
+      <li class="pure-menu-item"><a href="#" class="pure-menu-link">Videojuegos</a></li>
+      <li class="pure-menu-item"><a href="#" class="pure-menu-link">Anime</a></li>
+      <li class="pure-menu-item"><a href="#" class="pure-menu-link">Manga</a></li>
+      <li class="pure-menu-item"><a href="#" class="pure-menu-link">Misceláneas</a></li>
+    </ul>
+  </div>
+
+  <!-- END OF NAVBAR -->
+
+  <!-- POST PREVIEW -->
+
+  <div class="pure-g post-list-container">
+    <div class="pure-u-3-5">
+      <div>
+        {% for post in site.posts limit 4 %}
+          <div class="border-top">
+            <img width="1200" height="400" src="{{ BASE_PATH }}{{ post.featured_image }}">
+            <div class="post-content">
+              <h3 class="content-subhead">
+                <a href="{{ BASE_PATH }}{{ post.url }}"> {{ post.title }} </a>
+              </h3>
+              <p class="mid-size">
+                {{ post.content | strip_html | truncatewords:40 }}
+              </p>
+              <div class="mid-size">
+                <a> {{ post.date | date_to_string }} </a>
+              </div>
+              <!-- <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></div>
+              {{ post.content | strip_html | truncatewords:75}}<br>
+              <a href="{{ post.url }}">Read more...</a><br><br> -->
+            </div>
+          </div>
+          {% endfor %}
+      </div>
+    </div>
+
+    <!-- END OF POST PREVIEW -->
+    <div class="pure-u-2-5">
+      <h5 class="padding-3"> Autora </h5>
+      <div class="pure-g padding-3">
+        <div class="pure-u">
+          <img class="avatar" height="64" width="64" src="{{ BASE_PATH }}/assets/goshi.jpg">
+        </div>
+        <div class="pure-u-3-4 padding-3">
+          <h4> Goshi </h4>
+          <p class="mid-size">
+            nfdjkfndsjk
+          </p>
+       </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
