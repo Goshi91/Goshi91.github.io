@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Frikon</title>
+  <meta name="description" content="Un Blog sobre cosas frikis: Comics, Peliculas, Series you name it">
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="/css/pure.css">
+  <link rel="stylesheet" href="/css/app.css">
+  <link rel="canonical" href="http://localhost:4000/">
+  <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="/feed.xml">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link rel="icon" href="/assets/icon.ico" sizes="32x32 48x48">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <div class="header no-padding no-margin">
+      <div class="home-menu pure-menu pure-menu-horizontal">
+        <img class="no-padding no-margin header-logo" src="{{ BASE_PATH }}/assets/logofinal.png">
+      </div>
+    </div>
+    <!-- END OF HEADER -->
+
+    <!-- NAV BAR -->
+    <div class="pure-menu-horizontal">
+      <ul class="pure-menu-list">
+        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Peliculas</a></li>
+        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Series</a></li>
+        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Comics</a></li>
+        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Literatura</a></li>
+        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Videojuegos</a></li>
+        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Anime</a></li>
+        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Manga</a></li>
+        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Misceláneas</a></li>
+      </ul>
+    </div>
+
+    <!-- END OF NAVBAR -->
+    <h1 class="post-title-main">{{ page.title }}</h1>
+    <div> {{ content }} </div>
+</body>
+</html>
