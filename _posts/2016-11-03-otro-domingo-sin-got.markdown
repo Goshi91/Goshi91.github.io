@@ -4,6 +4,7 @@ categories: series
 title:  "Otro domingo sin GoT"
 date:   2016-11-03 17:02:56 -0300
 categories: jekyll update
+social_description: "test"
 featured_image: 'assets/sandman.jpg'
 external_image: 'https://3.bp.blogspot.com/-_PaAHwaJMDE/WBZEL94iAaI/AAAAAAAAAaA/QzHvad8z8pMrUc-p3VX0JpEpeBMssOSdQCLcB/s400/got.jpg'
 ---

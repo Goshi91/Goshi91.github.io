@@ -3,6 +3,7 @@ layout: post
 categories: series
 title:  "El legado maldito"
 date:   2016-11-03 17:02:56 -0300
+social_description: "test"
 featured_image: 'assets/sandman.jpg'
 external_image: 'https://cdn0.vox-cdn.com/thumbor/G3AoUXBil6bO6jdkfQkDhWCdM18=/0x273:1200x1073/720x480/filters:focal(0x273:1200x1073):format(webp)/cdn3.vox-cdn.com/uploads/chorus_image/image/50306837/link_Qgpq3BbmMdohmEGjkKxLeSwJaJFtZGnM_own.0.0.jpg'
 ---
