@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:title" content="{{post.title}}"/>
-    <meta property="og:image" content="{{ BASE_PATH }}{{ post.external_image ? post.external_image : post.featured_image }}"/>
+    <meta property="og:image" content="{{ page.external_image }}"/>
     <title>Frikon</title>
     <meta name="description" content="Un Blog sobre cosas frikis: Comics, Peliculas, Series you name it">
     <link rel="stylesheet" href="/assets/main.css">
@@ -21,6 +21,7 @@
 </head>
 
 <body>
+
     <div id="fb-root"></div>
     <script>
         (function(d, s, id) {
@@ -86,10 +87,10 @@
     <!-- SOCIAL CRAP -->
     <div class="padding-3">
         <div class="container">
-            <div class="fb-like" data-href="http://goshi91.github.io{{ page.url }}" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+            <div class="fb-like" data-href="https://goshi91.github.io{{ page.url }}" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
         </div>
         <div class="container text-center">
-            <div class="fb-comments" data-href="http://goshi91.github.io{{ page.url }}" data-numposts="5"></div>
+            <div class="fb-comments" data-href="https://goshi91.github.io{{ page.url }}" data-numposts="5"></div>
         </div>
     </div>
     <!-- FOOTER -->
