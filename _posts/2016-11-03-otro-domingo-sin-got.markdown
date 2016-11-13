@@ -1,5 +1,6 @@
 ---
 layout: post
+categories: series
 title:  "Otro domingo sin GoT"
 date:   2016-11-03 17:02:56 -0300
 categories: jekyll update
